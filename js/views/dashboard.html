@@ -3,8 +3,180 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+
+<div id = headerNavigation >
+
+            <nav class="navbar custom-navbar-default" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand white" href="#">Brand</a>
+                    </div>
+
+
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="white"href="#">Companies</a></li>
+                            <li><a class="white"href="#">Profile</a></li>
+                            <li><a class="white"href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-expanded="false">Actions <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+  </div>
+
+<div class="container">
+    <!--<div >-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand white" href="#">Brand</a>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--&lt;!&ndash;<ul class="nav navbar-nav">&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<li><a href="#">Link</a></li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="dropdown">&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ul class="dropdown-menu" role="menu">&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Action</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Another action</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Something else here</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="divider"></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Separated link</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="divider"></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">One more separated link</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--</ul>-->
+            <!--<form class="navbar-form navbar-left" role="search">-->
+                <!--<div class="form-group">-->
+                    <!--<input type="text" class="form-control" placeholder="Search">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-default">Submit</button>-->
+            <!--</form>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a class="white"href="#">Companies</a></li>-->
+                <!--<li><a class="white"href="#">Profile</a></li>-->
+                <!--<li><a class="white"href="#"><span class="glyphicon glyphicon-bell"></span></a></li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-expanded="false">Actions <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu" role="menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+
+
+    <div id="upperLayout" class="row">
+        <div id="image" class="pull-left col-md-3" >
+            <img src="..\..\assets\user_images\me.png" class="img-thumbnail" alt="avatar"/>
+        </div>
+
+
+        <div id="userDetails" class="pull-left col-md-6 ">
+            <h2>Vishal Gupta</h2>
+            <div class="pull-left">
+                <span class="pull-left glyphicon glyphicon-briefcase"></span>
+                <span class="pull-left text">Designation at Company</span>
+                <span class="pull-left glyphicon glyphicon-map-marker"></span>
+                <span class="pull-left text">City, State, Country</span>
+             </div>
+
+            <div>
+                <table class="table table-condensed buffer-top-50" >
+                    <tr>
+                        <td>Skill Type:</td>
+                        <td>Skill</td>
+                    </tr>
+                </table>
+              </div>
+        </div>
+
+        <div class="pull-left col-md-3">
+            <div class="pull-right buffer-editProfile-button">
+                <button type="button" class="btn btn-primary">Edit Profile</button>
+            </div>
+            <div class="panel panel-default buffer-top-20 clear-both">
+                <div class="panel-heading">Profile Completeness</div>
+                <div class="panel-body">
+                    <div class="progress ">
+                        <div class="progress-bar progress-bar-success" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lowerLayout" class="row">
+        <div class="pull-left col-md-3" >
+
+        </div>
+
+        <div class="pull-left col-md-6" >
+
+        </div>
+
+        <div class="pull-left col-md-3" >
+
+        </div>
+
+    </div>
+
+
+</div>
 
 </body>
 </html>
