@@ -1,0 +1,40 @@
+.custom-navbar-default{
+    background-color:  #003300;
+    border-radius: 0px;
+}
+
+.navbar{
+    border-radius: 0px !important;
+}
+
+
+a.white{
+    color: #ffffff !important;
+}
+
+.text{
+    line-height: 1.328571 !important;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.buffer-top-50{
+    margin-top: 50px;
+}
+
+.buffer-editProfile-button{
+    margin: 20px 0px 20px 20px;
+}
+
+.buffer-top-20{
+    margin-top: 20px;
+}
+
+.clear-both{
+    clear: both;
+}
+
+.table{
+    width:70% !important;
+    border-top: none !important;
+}
