@@ -3,22 +3,28 @@ var app = angular.module("app_main",[
 ]);
 
 
-app.config(['$routeProvider'],function($routeProvider){
+app.config(function ($routeProvider) {
     $routeProvider
         .when('/views/dashboard.html',{
-            template: '/views/dashboard.html',
+            templateUrl: 'views/dashboard.html',
             controller: 'dashboardCtrl'
 
         }
     )
         .when('/views/profile.html',{
-            template: '/views/profile.html',
+            templateUrl: 'views/profile.html',
             controller: 'profileCtrl'
 
         }
     )
+        .when('/', {
+            templateUrl: 'views/dashboard.html',
+            controller: 'dashboardCtrl'
+
+        }
+    )
         .otherwise({
-        redirectTo: '/index.html'
+            redirectTo: '/'
     });
 
 });
