@@ -1,22 +1,33 @@
-var placedBookServices = angular.module('PlacedBookServices', ["ngResource"]);
-
-atomServices.factory('api', [
+app.service('api', [
     '$http',
-    '$resource',
     function (
         $http,
         $resource) {
 
         var api = api || {},
-            relativeUrl = 'http://dev-atom.com/',
+            relativeUrl = '',
             url;
 
-        api.get = function (method, id, query) {
+        var matesData = {
+            "list": [{"id":0,"name" : "Adam","company":"TCS"},
+                {"id":1,"name" : "Mathews","company":"Info"}
+            ]
+        };
+
+        api.getMates = function () {
             ///<summary>
             /// Get method for api services
             ///</summary>
-            url = relativeUrl + method + (!!id ? id: "")+ (!!query ? query : "");
-            return $http.get(url);
+            //url = relativeUrl + method + (!!id ? id: "")+ (!!query ? query : "");
+            return matesData;
+        };
+
+        api.getMate = function (id) {
+            ///<summary>
+            /// Get method for api services
+            ///</summary>
+            //url = relativeUrl + method + (!!id ? id: "")+ (!!query ? query : "");
+            return matesData.list[id];
         };
 
         api.post = function (method, id, query, postData) {
