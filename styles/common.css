@@ -1,67 +1,63 @@
-body {
-    background-color: #E9EAED !important;
-}
-
-.custom-navbar-default{
-    background-color:  #003300;
+.custom-navbar-default {
+    background-color: #003300;
     border-radius: 0;
 }
 
-.navbar{
+.navbar {
     border-radius: 0 !important;
 }
 
-.profile-pic{
+.profile-pic {
     max-width: 200px !important;
     max-height: 200px !important;
 }
 
-
-a.white{
+a.white {
     color: #ffffff !important;
 }
 
-.text{
+.text {
     line-height: 1.328571 !important;
     margin-left: 5px;
     margin-right: 3px;
 }
 
-.buffer-top-50{
+.buffer-top-50 {
     margin-top: 50px;
 }
-.reduce-buffer-top{
+
+.reduce-buffer-top {
     margin-top: 5px;
 }
-.buffer-editProfile-button{
+
+.buffer-editProfile-button {
     margin: 20px 0px 20px 20px;
 }
 
-.buffer-top-20{
+.buffer-top-20 {
     margin-top: 20px;
 }
 
-.clear-both{
+.clear-both {
     clear: both;
 }
 
-.custom-table{
-    width:70% !important;
+.custom-table {
+    width: 70% !important;
     border-top: none !important;
 }
+
 .borderless tbody tr td {
     border: none !important;
 }
 
-.dashboard-followers-following{
-
-}
-.dashboard-followers-following-table{
-
-}
-.image-small-avatar{
+.image-small-avatar {
     max-width: 64px;
-    max-height:64px;
+    max-height: 64px;
+}
+
+.card-shadow {
+    box-shadow: 0 0 30px black;
 }
 
 
