@@ -1,0 +1,11 @@
+{
+  "name": "PBook",
+  "version": "0.0.1",
+  "homepage": "https://github.com/provish/PBook",
+  "description": "Lens",
+  "main": "app.js",
+  "authors": [
+    "provish"
+  ],
+  "license": "LENS"
+}

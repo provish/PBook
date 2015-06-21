@@ -1,6 +1,7 @@
-app.controller('dashboardCtrl',['$scope',
+app.controller('dashboardCtrl', ['$scope',
 
-function($scope){
+  function ($scope) {
     $scope.userName = 'Vishal';
     $scope.userCompany = 'MAQ';
-}]);
+  }
+]);
